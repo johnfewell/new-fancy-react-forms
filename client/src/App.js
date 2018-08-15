@@ -5,7 +5,7 @@ import FormsIndex from './containers/FormsIndex';
 import FormsEdit from './containers/FormsEdit';
 import FormsShow from './containers/FormsShow';
 import NotFound from './NotFound';
-import FormResponses from './FormResponses';
+import FormResponses from './containers/FormResponses';
 import 'semantic-ui-css/semantic.css'
 
 class App extends Component {
