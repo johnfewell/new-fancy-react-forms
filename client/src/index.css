@@ -1,5 +1,43 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.borderless {
+  border: none !important;
+}
+
+.form-group-padding {
+  padding-bottom: 3em !important;
+  padding-top: 3em !important;
+}
+
+.form-spacer {
+  padding-bottom: 20em;
+}
+
+.scroll-bar {
+  height:658px;
+  /* height:80vh; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.form-body {
+  background-image: url('./components/background.jpeg');
+  background-color: #cccccc;
+  background-attachment: fixed;
+}
+
+/* Imported from other project */
+ .question.inactive{
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+-webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+ .question{
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
