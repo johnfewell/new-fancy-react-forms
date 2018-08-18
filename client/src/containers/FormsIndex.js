@@ -68,10 +68,7 @@ class FormsIndex extends Component {
   }
 
   renderForms() {
-    let sortedForms = [...this.props.forms].sort(function(a, b) {
-      return b.like - a.like;
-    });
-    return _.map(sortedForms, form => {
+    return _.map(this.props.forms, form => {
       return <FormCard form={form} key={form.id} />;
     });
   }
