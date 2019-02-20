@@ -4,12 +4,15 @@ import FormGroupShow from "./form_group_show";
 import ReactDOM from "react-dom";
 
 class FormsRenderQuestions extends Component {
-  componentDidUpdate() {
-    this.scrollToBottom();
+  componentWillUpdate() {
+    // only scroll to bottom after a new question has been added, not on initial page load
+    if (this.bottom !== undefined) {
+      this.scrollToBottom();
+    }
   }
 
   scrollToBottom() {
-    this.el.scrollIntoView({ behavior: "smooth" });
+    this.bottom.scrollIntoView({ behavior: "smooth" });
   }
 
   render() {
@@ -18,10 +21,15 @@ class FormsRenderQuestions extends Component {
     } else {
       return this.props.form.questions.map((question, i) => (
         <div>
+          <div
+            ref={top => {
+              this.top = top;
+            }}
+          />
           <FormGroupShow question={question} key={i} index={i} />
           <div
-            ref={el => {
-              this.el = el;
+            ref={bottom => {
+              this.bottom = bottom;
             }}
           />
         </div>
