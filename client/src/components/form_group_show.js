@@ -3,7 +3,6 @@ import { Divider } from "semantic-ui-react";
 import { Field, reduxForm } from "redux-form";
 
 const FormGroupShow = props => {
-  // const arrowIcon = <Fragment><i aria-hidden="true" class="arrow right small icon"></i></Fragment>
   const renderField = ({ input, label, type, meta: { touched, error } }) => (
     <div>
       <label>{label}</label>
