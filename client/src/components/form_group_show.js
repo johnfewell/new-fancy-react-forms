@@ -13,7 +13,12 @@ const FormGroupShow = props => {
     </div>
   );
 
-  const questionLabel = `${props.index + 1} -> ${props.question.content}`;
+  const questionLabel = (
+    <div>
+      {props.index + 1} <i aria-hidden="true" class="arrow right small icon" />{" "}
+      {props.question.content}
+    </div>
+  );
 
   return (
     <div>
