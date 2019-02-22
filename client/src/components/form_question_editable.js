@@ -7,7 +7,7 @@ const FormQuestionEditable = props => {
     <div>
       <label>{label}</label>
       <div>
-        <input {...input} placeholder="Type your answer here..." type={type} />
+        <input value={props.question.content} type={type} />
       </div>
     </div>
   );
