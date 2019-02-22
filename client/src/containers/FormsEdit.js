@@ -18,6 +18,7 @@ import { bindActionCreators } from "redux";
 import VerticalSidebar from "../components/vertical_sidebar";
 import HeaderMenu from "../components/header_menu";
 import FormsRenderQuestions from "../components/forms_render_questions";
+import FormsRenderEditableQuestions from "../components/forms_render_editable_questions";
 
 class FormsEdit extends Component {
   state = { open: false };
@@ -83,6 +84,14 @@ class FormsEdit extends Component {
                 <VerticalSidebar submitDelete={this.open} />
               </Grid.Column>
               <Grid.Column width={6}>
+                <div className="scroll-bar">
+                  <Container text>
+                    <Form size="huge">
+                      <FormsRenderEditableQuestions form={this.props.form} />
+                    </Form>
+                  </Container>
+                </div>
+
                 <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                   <Form size="big">
                     <Form.Group widths="equal">
