@@ -7,7 +7,7 @@
     "lodash": "4.17.11",
     "react": "16.4.2",
     "react-dom": "16.4.2",
-    "react-intersection-observer": "6.4.2",
+    "react-intersection-observer": "8.22.6",
     "react-redux": "5.1.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.8",
