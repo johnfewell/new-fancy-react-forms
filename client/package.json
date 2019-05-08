@@ -10,7 +10,7 @@
     "react-intersection-observer": "8.22.6",
     "react-redux": "7.0.3",
     "react-router-dom": "5.0.0",
-    "react-scripts": "3.0.0",
+    "react-scripts": "3.0.1",
     "react-sortable-hoc": "1.9.1",
     "redux": "4.0.1",
     "redux-form": "8.2.0",
