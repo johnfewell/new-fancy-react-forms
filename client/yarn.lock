@@ -7472,9 +7472,9 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
-redux-form@8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/redux-form/-/redux-form-8.2.2.tgz#df30b94937e11f22d9ebdb8dbc28683262dffd74"
+redux-form@8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/redux-form/-/redux-form-8.2.3.tgz#6156cddf15ad929cf70671607d3b980a81e94ec1"
   dependencies:
     "@babel/runtime" "^7.2.0"
     es6-error "^4.1.1"
